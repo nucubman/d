@@ -1,0 +1,135 @@
+C shi sheileba funqciidan funqciis dadzaxeba anu rekursia ! 
+    int  sum(int n) {
+     if (n < 10) {
+       return n+sum(n+1);
+}
+ return n;
+}
+funqcia main is zemot iqmneba ! 
+cilis magivrad sheileba gaketdes rekursiit ! 
+a = 10; 
+
+int t = sum(a) anu gadavecit 10 im shemtxvevashi tu n < 100 ricxevbis jami iqneba 5005!
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h> 
+#include <conio.h>
+
+
+int  sum(int n) {
+	if (n < 10) {
+		return n + sum(n + 2);
+	}
+	return n;
+}
+
+main() {
+	int a = 0;
+
+	int t = sum(a);
+	printf("%d ", t);
+	getchar();
+}
+
+consoleshi iqneba 30 !
+
+
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h> 
+#include <conio.h>
+
+
+int  sum(int n) {
+	if (n < 100) {
+		return n + sum(n + 7);
+	}
+	return n;
+}
+
+main() {
+	int a = 0;
+
+	int t = sum(a);
+
+
+	printf("%d ", t);
+	getchar();
+}
+
+7 is jeradi ricxvebii !
+
+
+
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h> 
+#include <conio.h>
+
+
+int  sum(int n) {
+	if (n < 100){
+		printf("%d ", n); 
+		return n + sum(n + 5);
+		
+	}
+	return n;
+}
+
+main() {
+	int a = 0;
+
+	int t = sum(a);
+
+	
+	printf("%d ", t);
+	getchar();
+}
+
+5 is jeradi ricxvebi da amobechdili es ricxvebi ! 
+
+
+& - is shemtxvevashi 2 ive true unda ikos ro true dabrundes true = 1 da 1 ze meti ; false = 0; ^ aris xori !
+true ^ true = false;
+true ^ false = true;
+false ^ true = true;
+false^false = false;
+
+binaluri operacia - aris xori
+1   -  001
+4   -  100 
+amati qsori aris 101!
+
+0 - 0
+1  - 1
+2 - 10
+3 - 11
+4 - 100
+5 - 101
+6 - 110
+7 - 111
+8 - 1000
+
+6 ^ 3 = 101 anu 5! 
+
+8 ^ 4 = 1100 = 12! 
+
+strlen gvibrunebs ramdeni simbolo aris striqonshi ! 
+
+ramdeni simbolosganac shegdeba imdens daabrunebs parols anu strlen(password) tu password airs su1p gamoitans 4 s anu 4 simboloa 
+crypt shi chaiwereba dashifruli text !
+mere dasashifr texts titio titio simbolos vuvlit ! 
+vshifravt H s i = 0;
+yovel 4 shifravs anu paroli ramxelacaa anu 4 is gamotovebit shifravs titoeul simbolos ! 
+roca dinamiurad ikofa striqonistvis masivis imisatvis ro icodes ro es striqonia anu sadac mtavrdeba boloshi unda davuwerot '\0';
+
+
+
+
+
+
+
+
