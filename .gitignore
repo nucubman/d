@@ -126,6 +126,52 @@ vshifravt H s i = 0;
 yovel 4 shifravs anu paroli ramxelacaa anu 4 is gamotovebit shifravs titoeul simbolos ! 
 roca dinamiurad ikofa striqonistvis masivis imisatvis ro icodes ro es striqonia anu sadac mtavrdeba boloshi unda davuwerot '\0';
 
+char * s = "iloarisgogi";
+igivea rac 
+char * s = malloc(13);   char - i aris amrto striqoni int ar sheileba ! <string.h> shi sheileba gamoviyenot strlen(s) daabrunebs ramdeni simboloa
+amashi anu am shemxtevvashi 13 - raodenoba simboloesbshi am striqonshi! 
+Malloc - dinamiuri masivi! malloc funqciaa ! malloc - gamoyofs mexsierebas ! malloc abrunebs pointers sadac unda vimushaot ! 
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+#include <stdlib.h>
+
+void main() {
+
+	printf("Type text:\n");
+
+	char * text = malloc(100);
+	char * key = malloc(100);
+
+	scanf("%s", text);
+
+	printf("Type encrypt key:\n");
+
+	scanf("%s ", key);
+
+	int textlenght = strlen(text);
+	int keylenght = strlen(key);
+
+
+	text[textlenght + 1] = '\0';
+	key[keylenght + 1] = '\0';
+
+	int i;
+
+	char * encrypted = malloc(textlenght + 1);
+
+	for (i = 0; i < textlenght; i++) {
+		encrypted[i] = text[i] ^ key[i % keylenght];
+	}
+
+	encrypted[textlenght + 1] = '\0';
+	printf("encrypted text: %s \n", encrypted);
+
+	_getch();
+}
+
 
 
 
